@@ -14,11 +14,11 @@ const PickCity = (props) => {
   }
 
   return (
-    <form className={styles.pickCityForm} onSubmit={handleSubmit}> 
+    <form className={styles.pickCityForm} onSubmit={handleSubmit}>
       <label>
         <TextInput placeholder="Enter city name...." value={city} onChange={e => setCity(e.target.value)} />
       </label>
-      <Button>Search</Button>
+      <Button type="submit">Search</Button>
     </form>
   );
 };
